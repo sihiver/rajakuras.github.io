@@ -1251,6 +1251,14 @@ footer {
     line-height: 1.6;
 }
 
+/* Underline heading inside price cards (head card) */
+.price-list .service-card h3 {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
 .price-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
