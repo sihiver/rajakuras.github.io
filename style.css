@@ -1251,6 +1251,45 @@ footer {
     line-height: 1.6;
 }
 
+.price-updated {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #777;
+}
+
+/* Area list inside price cards */
+.price-list .area-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    text-align: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+    row-gap: 8px;
+}
+
+.price-list .area-list li {
+    position: relative;
+    padding-left: 18px;
+    margin: 0;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.price-list .area-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
 /* Underline heading inside price cards (head card) */
 .price-list .service-card h3 {
     text-decoration: underline;
@@ -1432,6 +1471,10 @@ footer {
 
     .price-list h1 {
         font-size: 2em;
+    }
+
+    .price-list .area-list {
+        grid-template-columns: 1fr;
     }
 
     .price-cards {

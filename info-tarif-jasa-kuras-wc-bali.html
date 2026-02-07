@@ -34,56 +34,72 @@
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-    "name": "Jasa Sedot WC dan Pipa Mampet Bali",
-    "description": "Layanan sedot WC dan pipa mampet profesional di Bali dengan harga mulai dari Rp 300.000. Melayani Denpasar, Badung, Tabanan, Gianyar, Bangli, Klungkung, Karangasem dengan garansi hasil.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Raja Kuras WC Bali",
-        "telephone": "+6285337361233",
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "00:00",
-          "closes": "23:59"
-        }
-      },
-            "areaServed": ["Denpasar", "Badung", "Tabanan", "Gianyar", "Bangli", "Klungkung", "Karangasem"],
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "IDR",
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Jasa Sedot WC dan Pipa Mampet Bali",
+            "description": "Layanan sedot WC dan pipa mampet profesional di Bali dengan harga mulai dari Rp 300.000. Melayani Denpasar, Badung, Tabanan, Gianyar, Bangli, Klungkung, Karangasem dengan garansi hasil.",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Raja Kuras WC Bali",
+                "telephone": "+6285337361233",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                }
+            },
+            "areaServed": [
+                "Denpasar",
+                "Badung",
+                "Tabanan",
+                "Gianyar",
+                "Bangli",
+                "Klungkung",
+                "Karangasem"
+            ],
+            "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "IDR",
                 "lowPrice": "300000",
-        "highPrice": "1000000",
+                "highPrice": "1000000",
                 "offerCount": "7",
-        "offers": [
-          {
-            "@type": "Offer",
+                "offers": [
+                    {
+                        "@type": "Offer",
                         "price": "300000",
-            "priceCurrency": "IDR",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Sedot WC Denpasar"
-            }
-          },
-          {
-            "@type": "Offer",
+                        "priceCurrency": "IDR",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Sedot WC Denpasar"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
                         "price": "300000",
-            "priceCurrency": "IDR",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Sedot WC Badung"
-            }
-          },
-          {
-            "@type": "Offer",
+                        "priceCurrency": "IDR",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Sedot WC Badung"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
                         "price": "450000",
-            "priceCurrency": "IDR",
-            "itemOffered": {
-              "@type": "Service",
+                        "priceCurrency": "IDR",
+                        "itemOffered": {
+                            "@type": "Service",
                             "name": "Sedot WC Tabanan"
-            }
+                        }
                     },
                     {
                         "@type": "Offer",
@@ -120,10 +136,10 @@
                             "@type": "Service",
                             "name": "Sedot WC Karangasem"
                         }
-          }
-        ]
-      }
-    }
+                    }
+                ]
+            }
+        }
     </script>
 </head>
 <body>
@@ -182,14 +198,20 @@
             <h1>Daftar Harga Sedot WC dan Mampet Bali</h1>
             <div class="price-intro">
                 <p>Kami menawarkan harga yang transparan dan kompetitif untuk layanan sedot WC dan saluran pipa mampet di seluruh area Bali.</p>
+                <p class="price-updated">Update terakhir: Februari 2026</p>
             </div>
 
             <div class="service-cards">
                 <div class="service-card">
                     <i class="fas fa-industry service-icon"></i>
-                    <h3>Kodya Denpasar</h3>
+                    <h3>Kota Denpasar</h3>
                     <div class="price">Mulai Rp 300.000</div>
-                    <p>✓ Denpasar Selatan, Denpasar Barat, Denpasar Timur, Denpasar Utara dan sekitarnya</p>
+                    <ul class="area-list">
+                        <li>Denpasar Selatan</li>
+                        <li>Denpasar Barat</li>
+                        <li>Denpasar Timur</li>
+                        <li>Denpasar Utara</li>
+                    </ul>
                     <a href="tel:0853-3736-1233" class="cta-button phone-cta">
                         <i class="fas fa-phone"></i>
                         Hubungi Sekarang
@@ -200,7 +222,25 @@
                     <i class="fas fa-industry service-icon"></i>
                     <h3>Kabupaten Badung</h3>
                     <div class="price">Mulai Rp 300.000</div>
-                    <p>✓ Tuban, Jimbaran, Nusa Dua, Uluwatu, Kuta, Legian, Seminyak, Krobokan, Canggu, Munggu, Sibang, Abiansemal, Anggantaka, Kapal, Mengwi, Sangeh, Petang dan sekitarnya</p>
+                    <ul class="area-list">
+                        <li>Tuban</li>
+                        <li>Jimbaran</li>
+                        <li>Nusa Dua</li>
+                        <li>Uluwatu</li>
+                        <li>Kuta</li>
+                        <li>Legian</li>
+                        <li>Seminyak</li>
+                        <li>Kerobokan</li>
+                        <li>Canggu</li>
+                        <li>Munggu</li>
+                        <li>Sibang</li>
+                        <li>Abiansemal</li>
+                        <li>Anggantaka</li>
+                        <li>Kapal</li>
+                        <li>Mengwi</li>
+                        <li>Sangeh</li>
+                        <li>Petang</li>
+                    </ul>
                     <a href="tel:0853-3736-1233" class="cta-button phone-cta">
                         <i class="fas fa-phone"></i>
                         Hubungi Sekarang
@@ -211,7 +251,10 @@
                     <i class="fas fa-industry service-icon"></i>
                     <h3>Kabupaten Tabanan</h3>
                     <div class="price">Mulai Rp 450.000</div>
-                    <p>✓ Tanah Lot, Tabanan Kota dan sekitarnya</p>
+                    <ul class="area-list">
+                        <li>Tanah Lot</li>
+                        <li>Tabanan Kota</li>
+                    </ul>
                     <a href="tel:0853-3736-1233" class="cta-button phone-cta">
                         <i class="fas fa-phone"></i>
                         Hubungi Sekarang
@@ -222,7 +265,19 @@
                     <i class="fas fa-industry service-icon"></i>
                     <h3>Kabupaten Gianyar</h3>
                     <div class="price">Mulai Rp 500.000</div>
-                    <p>✓ Batubulan, Celuk, Sukawati, Singapadu, Mas, Ubud, Payangan, Tegallalang, Pejeng, Tampak Siring, Gianyar Kota dan sekitarnya</p>
+                    <ul class="area-list">
+                        <li>Batubulan</li>
+                        <li>Celuk</li>
+                        <li>Sukawati</li>
+                        <li>Singapadu</li>
+                        <li>Mas</li>
+                        <li>Ubud</li>
+                        <li>Payangan</li>
+                        <li>Tegallalang</li>
+                        <li>Pejeng</li>
+                        <li>Tampaksiring</li>
+                        <li>Gianyar Kota</li>
+                    </ul>
                     <a href="tel:0853-3736-1233" class="cta-button phone-cta">
                         <i class="fas fa-phone"></i>
                         Hubungi Sekarang
@@ -233,7 +288,11 @@
                     <i class="fas fa-industry service-icon"></i>
                     <h3>Kabupaten Bangli</h3>
                     <div class="price">Mulai Rp 550.000</div>
-                    <p>✓ Kintamani, Toya Bungkah, Bangli Kota dan sekitarnya</p>
+                    <ul class="area-list">
+                        <li>Kintamani</li>
+                        <li>Toya Bungkah</li>
+                        <li>Bangli Kota</li>
+                    </ul>
                     <a href="tel:0853-3736-1233" class="cta-button phone-cta">
                         <i class="fas fa-phone"></i>
                         Hubungi Sekarang
@@ -244,7 +303,11 @@
                     <i class="fas fa-industry service-icon"></i>
                     <h3>Kabupaten Klungkung</h3>
                     <div class="price">Mulai Rp 550.000</div>
-                    <p>✓ Banjarangkan, Klungkung, Kusamba dan sekitarnya</p>
+                    <ul class="area-list">
+                        <li>Banjarangkan</li>
+                        <li>Klungkung</li>
+                        <li>Kusamba</li>
+                    </ul>
                     <a href="tel:0853-3736-1233" class="cta-button phone-cta">
                         <i class="fas fa-phone"></i>
                         Hubungi Sekarang
@@ -255,7 +318,13 @@
                     <i class="fas fa-industry service-icon"></i>
                     <h3>Kabupaten Karangasem</h3>
                     <div class="price">Mulai Rp 600.000</div>
-                    <p>✓ Padangbai, Manggis, Candidasa, Amed, Karangasem Kota dan sekitarnya</p>
+                    <ul class="area-list">
+                        <li>Padangbai</li>
+                        <li>Manggis</li>
+                        <li>Candidasa</li>
+                        <li>Amed</li>
+                        <li>Karangasem Kota</li>
+                    </ul>
                     <a href="tel:0853-3736-1233" class="cta-button phone-cta">
                         <i class="fas fa-phone"></i>
                         Hubungi Sekarang
@@ -266,9 +335,10 @@
             <div class="service-areas">
                 <h3>Catatan Penting:</h3>
                 <ul>
-                    <li>✓ Kami melayani juga Kabupaten Buleleng, Kabupaten Jembrana</li>
-                    <li>✓ Harga di atas adalah harga dasar, dapat berbeda tergantung kondisi dan volume</li>
-                    <li>✓ Sudah termasuk biaya transportasi untuk area tertentu</li>
+                    <li>✓ Termasuk area sekitar (silakan konfirmasi lokasi Anda)</li>
+                    <li>✓ Kami melayani juga Kabupaten Buleleng dan Kabupaten Jembrana (tarif menyesuaikan lokasi)</li>
+                    <li>✓ Harga adalah harga mulai; biaya final menyesuaikan volume, jarak, dan tingkat sumbatan</li>
+                    <li>✓ Biaya transportasi menyesuaikan jarak/lokasi (sebagian area gratis)</li>
                     <li>✓ Garansi hasil kerja 7 hari</li>
                     <li>✓ Gratis survei dan konsultasi</li>
                 </ul>
@@ -301,7 +371,7 @@
             <div class="footer-info">
                 <h3>Raja Kuras WC Bali</h3>
                 <p>Jasa Sedot WC Profesional 24 Jam di Bali</p>
-                <p>Melayani: Denpasar, Badung, Gianyar, Tabanan</p>
+                <p>Melayani: Denpasar, Badung, Tabanan, Gianyar, Bangli, Klungkung, Karangasem</p>
                 <p>Email: info@rajakuraswc.com</p>
                 <div class="contact-info">
                     <a href="tel:0853-3736-1233" class="contact-button phone-button">
